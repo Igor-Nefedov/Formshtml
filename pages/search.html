@@ -25,16 +25,14 @@
     </ul>
   </nav>
 </header>
-
-  <h1>Поиск авто</h1>
+ <h1>Поиск авто</h1>
   <hr>
   <form action="https://tests.fomenko.top/echo/index.php" method="get">
     <fieldset>
-      <legend>Тип кузова</legend>
-      <div>
-        <label for="Список"></label>
-        <select name="list" id="list">
-        <option>кузов</option>
+      <legend>Кузов</legend>
+      <div>      
+        <select name="list" id="list" multiple>
+        <option>Тип кузова</option>
         <option>Седан</option>
         <option>Хетчбэк 5д</option>
         <option>Хетчбэк 3д</option>
@@ -49,42 +47,41 @@
       </div>
    </fieldset>
    <fieldset>
-     <legend>Марка авто</legend>
-     <div>
-       <label for="Список"></label>
-       <select name="list2" id="list2">
-       <option>модель</option>
-       <option>Audi</option>
-       <option>Aston Martin</option>
-       <option>Alfa Romeo</option>
-       <option>Acura</option>
-       <option>BMW</option> 
-       <option>Bentley</option>
-       <option>Cadillac</option>
-       <option>Chevrolet</option>
-       <option>Citroen</option>
-       <option>Dodge</option>
-       <option>Daewoo</option>
-       <option>Ford</option>
-       <option>Fiat</option>
-       <option>Hyundai</option>
-       <option>Honda</option>
-       <option>Kia</option>
-       <option>Mercedes</option>
-       <option>Mazda</option>
-       <option>Nissan</option>
-       <option>Renault</option>
-       <option>Skoda</option>
-       <option>Toyota</option>
-       <option>Volkswagen</option>
-       <option>Volvo</option>
-      </select>
+     <legend>Марка</legend>
+       <div>      
+       <select name="list2" id="list2" multiple>
+         <option>Марка авто</option>
+         <option>Audi</option>
+         <option>Aston Martin</option>
+         <option>Alfa Romeo</option>
+         <option>Acura</option>
+         <option>BMW</option> 
+         <option>Bentley</option>
+         <option>Cadillac</option>
+         <option>Chevrolet</option>
+         <option>Citroen</option>
+         <option>Dodge</option>
+         <option>Daewoo</option>
+         <option>Ford</option>
+         <option>Fiat</option>
+         <option>Hyundai</option>
+         <option>Honda</option>
+         <option>Kia</option>
+         <option>Mercedes</option>
+         <option>Mazda</option>
+         <option>Nissan</option>
+         <option>Renault</option>
+         <option>Skoda</option>
+         <option>Toyota</option>
+         <option>Volkswagen</option>
+         <option>Volvo</option>
+       </select>
      </div>
     </fieldset>
     <fieldset>
       <legend>Страна производитель</legend>
-      <div>
-        <select name="country" id="country">
+      <div>      
+        <select name="country" id="country" multiple>
           <option>страна</option>
           <option>Англия</option>
           <option>Германия</option>
@@ -94,8 +91,7 @@
           <option>США</option>
           <option>Корея</option>
           <option>Япония</option>
-        </select>
-        <label for="Список"></label>
+        </select> 
       </div>
     </fieldset>
     <Fieldset>
@@ -105,8 +101,84 @@
         <input type="number" name="year" max="2022" min="1800" placeholder="Год,до">
       </div>
     </Fieldset>
-    
-    
-    </form>
+    <fieldset>
+      <legend>Цена</legend>
+      <div>
+        <input type="number" name="цена" max="9000000000" min="1" placeholder="От">
+        <input type="number" name="цена" max="9000000000" min="1" placeholder="До">
+      </div>
+    </fieldset>
+    <fieldset>
+     <legend>Тип топлива</legend>
+     <div>      
+       <select name="fuel" id="fuel" multiple>
+          <option>топливо</option>
+          <option>Бензин</option>
+          <option>Газ</option>
+          <option>Дизель</option>
+          <option>Газ-Бензин</option>
+          <option>Гибрид</option>
+          <option>Электро</option>
+       </select>
+    </div>
+    </fieldset>
+    <fieldset>
+      <legend>КПП</legend>
+      <div>       
+        <select name="transmission" id="transmission" multiple>
+          <option>Кробка</option>
+          <option>Механика</option>
+          <option>Автомат</option>
+          <option>Типтроник</option>
+          <option>Вариатор</option>
+          <option>Робот</option>
+        </select>
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend>Цвет</legend>
+      <div>
+         <select name="col" id="col" multiple>
+          <option>цвет</option>
+          <option>Белый</option>
+          <option>Серый</option>
+          <option>Красный</option>
+          <option>Чёрный</option>
+          <option>Зелёный</option>
+          <option>Синий</option>
+          <option>Желтый</option>
+          <option>Оранжевый</option>
+          <option>Фиолетовый</option>
+          <option>Годубой</option>
+         </select>
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend>Комплектация</legend>
+      <div>
+         <select name="eq" id="equipment" multiple>
+           <option>Кондционер</option>
+           <option>Круиз контроль</option>
+           <option>Подогрев сидений</option>
+           <option>Подогрев руля</option>
+           <option>Сигнализация</option>
+           <option>Мультимедиа</option>
+           <option>Кожаный салон</option>
+         </select> 
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend>Состояние авто</legend>
+      <div>
+        <select name="condition" id="condit" multiple>
+          <option>Не растаможе</option>
+          <option> Не был в ДТП</option>
+          <option>Не крашен</option>
+          <option>На ходу</option>
+          <option>Не требует вложений</option>       
+        </select>
+      </div>
+    </fieldset>
+   </form>
   </body>
 </html>
