@@ -26,7 +26,7 @@
   </nav>
 </header>
 
-  <h1>Ргистрация</h1>
+  <h1>Регистрация</h1>
   <form action="https://tests.fomenko.top/echo/index.php" method="get"> 
     <fieldset>
       <legend>Ввод данных</legend>
@@ -37,17 +37,18 @@
       <div>
         <label for="psw">Password</label>
         <input id="psw" type="password" name="psw" placeholder="Пароль">
-        <input type="checkbox" name="Запомнить пароль">
-       </div>
-       <div>
-         <label for="psw">Password</label>
-         <input id="confirm_password" type="text" name="confirm_password" placeholder="Подтвердить пароль">
-         <input type="checkbox" name="Подтвердить пароль">
-       </div>
+        <input type="checkbox" name="rememberpassword">
+      </div>
       <div>
-        <input type="submit" value="отправить">
+        <label for="confirm_password">Confirm password</label>
+        <input id="confirm_password" type="text" name="confirmpassword" placeholder="Подтвердить пароль">
+        <input type="checkbox" name="confirmpassword">
+      </div>
+      <div>
+        <label for="submit">Send</label>
+        <input id="submit" type="submit" value="send">
       </div>
     </fieldset>
-   </form>
+  </form>
   </body>
 </html>
